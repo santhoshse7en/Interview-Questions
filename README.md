@@ -87,7 +87,7 @@ parent_word(string)
                
                
 ```python3
-def string_printer(n):
+def string_printer(n: int) -> bool:
     """
     :type n: int
     :rtype: List[str]
