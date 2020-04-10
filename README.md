@@ -4,7 +4,7 @@ Python Basic Program
 ## Question 1: First Non-Unique word in a String
 Given String, Find the first repeating words in it and return the words. If it doesn't exist, raise value error
 
-#### Method 1: using strings
+#### Method 1: using string
 
 ```python3
 
