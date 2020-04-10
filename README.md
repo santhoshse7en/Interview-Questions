@@ -9,8 +9,7 @@ Given String, Find the first repeating words in it and return the word. If it do
 ```python3
 
 def parent_word(string: str) -> bool:
-    
-    #Split the string into words using built-in function
+
     try:
         return min({word for word in s.split() if s.count(word) != 1})
     except:
@@ -174,6 +173,7 @@ Given a string, find the first non-repeating character in it and return it's ind
 
 class Solution:
     def firstUniqChar(self, s: str) -> int:
+    
         try:
             return min({s.index(letter) for letter in set(s) if s.count(letter) == 1})
         except:
@@ -187,6 +187,7 @@ class Solution:
 
 class Solution:
     def firstUniqChar(self, s: str) -> int:
+    
         for letter in s:
             if s.count(letter) == 1:
                 return s.index(letter)
