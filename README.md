@@ -231,4 +231,6 @@ string = 'loveleetcode'
 unique_character = Solution()
 unique_character.firstUniqChar(string)
 
+2
+
 ```
