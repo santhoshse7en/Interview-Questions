@@ -169,6 +169,31 @@ class Solution:
 
 ```
 
+#### Method 2:
+
+```python3
+
+class Solution:
+    def firstUniqChar(self, s: str) -> int:
+        letters = [letter for letter in s]
+
+        repeated, new = [], set()
+
+        for letter in letters:
+
+            if letter in repeated:
+                new.add(letter)
+
+            repeated.append(letter)
+
+        list1 = [ele for ele in repeated if ele not in new] 
+        try:
+            return s.find(list1[0])
+        except:
+            return -1
+
+```
+
 ### Output
 
 ```shell
