@@ -2,9 +2,23 @@
 Python Basic Program
 
 ## Question 1: First Non-Unique word in a String
-Given String, Find the first repeating words in it and return the words. If it doesn't exist, raise value error
+Given String, Find the first repeating words in it and return the word. If it doesn't exist, raise value error
 
 #### Method 1: using string
+
+```python3
+
+def parent_word(string: str) -> bool:
+    
+    #Split the string into words using built-in function
+    try:
+        return min({word for word in s.split() if s.count(word) != 1})
+    except:
+        raise ValueError('no repeated word found')
+    
+```
+
+#### Method 2: using string
 
 ```python3
 
@@ -160,9 +174,22 @@ Given a string, find the first non-repeating character in it and return it's ind
 
 class Solution:
     def firstUniqChar(self, s: str) -> int:
-        for a in s:
-            if s.count(a) == 1:
-                return s.find(a)
+        try:
+            return min({s.index(letter) for letter in set(s) if s.count(letter) == 1})
+        except:
+            return -1
+
+```
+
+#### Method 2:
+
+```python3
+
+class Solution:
+    def firstUniqChar(self, s: str) -> int:
+        for letter in s:
+            if s.count(letter) == 1:
+                return s.index(letter)
                 break
 
         return -1
