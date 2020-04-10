@@ -1,9 +1,26 @@
 ## Python_Basics
 Python Basic Program
 
-## Question 1: Extract the first occured word from repeated words in a string using python
+## Question 1: First Non-Unique word in a String
+Given String, Find the first repeating words in it and return the words. If it doesn't exist, raise value error
 
-#### Method 1: using set
+#### Method 1: using strings
+
+```python3
+
+def parent_word(string: str) -> bool:
+    
+    #Split the string into words using built-in function
+    for word in string.split():
+        if string.count(word) != 1:
+            return word
+            break
+            
+    raise ValueError('no repeated word found')
+    
+```
+
+#### Method 2: using set
 
 ```python3
 
@@ -21,7 +38,7 @@ def parent_word(string: str) -> bool:
     
 ```
 
-#### Method 2: using list
+#### Method 3: using list
 
 ```python3
 
@@ -39,7 +56,7 @@ def parent_word(string: str) -> bool:
     
 ```
 
-#### Method 3: 
+#### Method 4: 
 
 ```python3
 
@@ -131,5 +148,34 @@ string_printer(10)
  'Dexter',
  'The Mentalist',
  'Dexter']
+
+```
+
+## Question 3: First Unique Character in a String
+Given a string, find the first non-repeating character in it and return it's index. If it doesn't exist, return -1.
+
+#### Method 1:
+
+```python3
+
+class Solution:
+    def firstUniqChar(self, s: str) -> int:
+        for a in s:
+            if s.count(a) == 1:
+                return s.find(a)
+                break
+
+        return -1
+
+```
+
+### Output
+
+```shell
+
+string = 'loveleetcode'
+
+unique_character = Solution()
+unique_character.firstUniqChar(string)
 
 ```
