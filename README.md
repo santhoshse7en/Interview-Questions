@@ -4,6 +4,19 @@ Python Basic Program
 ## Question 1: First Non-Unique word in a String
 Given String, Find the first repeating words in it and return the word. If it doesn't exist, raise value error
 
+#### Method 1: using set
+
+```python3
+
+def parent_word(string: str) -> bool:
+
+    try:
+        return min({word for word in set(s.split()) if s.count(word) != 1})
+    except:
+        raise ValueError('no repeated word found')
+    
+```
+
 #### Method 1: using string
 
 ```python3
