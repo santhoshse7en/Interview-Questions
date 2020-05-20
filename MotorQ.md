@@ -1,5 +1,4 @@
-## Python_Basics
-Python Basic Program
+## MotorQ Interview Question
 
 ## Question 1: First Non-Unique word in a String
 Given String, Find the first repeating words in it and return the word. If it doesn't exist, raise value error
