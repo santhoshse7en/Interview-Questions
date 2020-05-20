@@ -6,7 +6,7 @@
 2. [SQL](https://en.wikipedia.org/wiki/SQL)
 
 ### [MotorQ](https://motorq.co/)
-  **[Interview Questions](https://github.com/santhoshse7en/Interview-Questions/blob/master/Basic%20Questions/MotorQ.md)**
+* **[Interview Questions](https://github.com/santhoshse7en/Interview-Questions/blob/master/Basic%20Questions/MotorQ.md)**
 
 ### [GuideWire](https://www.guidewire.com/)
-  **[Interview Questions](https://github.com/santhoshse7en/Interview-Questions/blob/master/Basic%20Questions/GuideWire.md)**
+* **[Interview Questions](https://github.com/santhoshse7en/Interview-Questions/blob/master/Basic%20Questions/GuideWire.md)**
